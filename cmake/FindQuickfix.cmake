@@ -1,0 +1,5 @@
+find_path(Quickfix_INCLUDE_DIR fix40/Message.h PATH_SUFFIXES quickfix)
+find_library(Quickfix_LIBRARY quickfix)
+include(FindPackageHandleStandardArgs)
+find_package_handle_standard_args(Quickfix DEFAULT_MSG Quickfix_LIBRARY Quickfix_INCLUDE_DIR)
+mark_as_advanced(Quickfix_LIBRARY Quickfix_INCLUDE_DIR)
