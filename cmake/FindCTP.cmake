@@ -1,0 +1,6 @@
+find_path(CTP_INCLUDE_DIR ThostFtdcUserApiDataType.h)
+find_library(CTP_MD_LIBRARY thostmduserapi)
+find_library(CTP_TRADER_LIBRARY thosttraderapi)
+include(FindPackageHandleStandardArgs)
+find_package_handle_standard_args(CTP DEFAULT_MSG CTP_MD_LIBRARY CTP_TRADER_LIBRARY CTP_INCLUDE_DIR)
+mark_as_advanced(CTP_MD_LIBRARY CTP_TRADER_LIBRARY CTP_INCLUDE_DIR)
